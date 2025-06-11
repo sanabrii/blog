@@ -1,0 +1,179 @@
+body{ 
+	background-color: rgb(12, 28, 43) ;
+	background-image: url(src/oww.png);
+	background-size: cover;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	color:rgb(211, 215, 228) 
+
+}
+
+
+header{
+	background-color: #6381af;
+	color: #151e53;
+
+}
+
+#alice{
+	position: absolute;
+	bottom: 230px;
+	left: 470px;
+	width: 250px;
+	height: 500px;
+
+}
+
+
+#piplup {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	width: 100px;
+	animation: spin 6s infinite linear;
+  
+}
+
+
+#sobremim {
+	height: 70px;
+	width: 300px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	position: static
+
+}
+
+
+.ds {
+    height: 625px;
+    width: 700px;
+    display: inline-block;
+    background-image: url(src/3dsss.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: 100vw;
+    overflow: auto;
+	text-shadow: #ffffff;
+
+}
+
+
+.ds video {
+    display: block;
+    margin: 10.125% auto 0 auto;
+	transform: scale(1, 1.09); /* 1 = largura normal, 2 = altura dobrada */
+    width: 361.5px;
+    height: 33.75%;
+    border-radius: 10px;
+
+}
+
+
+.dstexto {
+    width: 272px;
+    height: 110px;
+    display: block;
+    padding: 15px;
+	margin-top: 50%;    
+	margin: 12% auto;
+    font-size: 16px;
+	color: #03030a;
+	overflow-y: auto;
+    transform: perspective(400px) rotate3d(1, 0, 0, 16deg);
+	
+}
+
+.dstexto::-webkit-scrollbar {
+	width: 6px;
+
+}
+
+.dstexto::-webkit-scrollbar-thumb {
+	background: rgb(40, 55, 121);
+	border-radius: 10px;
+  }
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+
+}
+
+
+.emoji{
+	width: 16px;
+
+
+}
+
+#dog{
+width: 40px;
+
+
+}
+
+#home{
+	position: relative;
+	bottom: 110px;
+	left: 16.5px;
+	width: 70px;
+	height: 13px;
+	background-color: #0000ff00;
+	border: 0px;
+	
+}
+
+#home:hover {
+	background: linear-gradient(#6381af98, #03030a00 , #6381af98); 
+	border: 0px;
+	transform: scale(1.02); 
+	cursor: pointer;
+
+} 
+
+#seta {
+	position: relative;
+	bottom: 85px;
+	right: 40px;
+	width: 30px;
+	transform: rotate(270deg);
+  
+}
+
+
+.painel{
+	margin:auto;
+	background-color: #1a225300;
+	width:1200px;
+	border-radius: 0px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+
+
+
+
+
+
+@font-face {
+	font-family: 'animalcross';
+	src: url('/src/animalcross.ttf') format('truetype'); 
+	font-weight: normal; 
+	font-style: normal; 
+
+}
+
+
+
+@keyframes spin{
+  from{ transform: perspective(326px) rotateY(0deg); }
+  to{ transform: perspective(326px) rotateY(360deg); }
+
+}

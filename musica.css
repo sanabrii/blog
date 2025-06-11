@@ -1,0 +1,417 @@
+body{ 
+  background-image: url(src/notas.png);
+  animation: animacao 30s;
+  background-color: #2f4a7c;  
+  background-blend-mode: overlay;
+  background-size: 150px, cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  
+
+}
+
+.painel{
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+
+}
+
+
+/*---pearphone---*/
+
+#pearphone{
+  margin-top: 1%;
+  position: fixed;
+  max-height: 100vw;
+  width: 500PX;
+  height: 500PX;
+  animation: virada 1s infinite steps(1, end);
+
+}
+
+#pear{
+  padding-top: 10px;
+  width: 400px;
+}
+
+
+.peartexto {
+  position: absolute;
+  top: 18%;
+  left: 37.5%;
+  width: 180px;
+  height: 75px;
+  display: block;
+  font-size: 13px;
+  color: #03030a;
+  overflow-y: auto;
+  transform: rotate(-2.2deg);
+  transform-origin: center;
+  scroll-behavior: smooth;
+}
+
+.peartexto::-webkit-scrollbar {
+width: 4px;
+
+}
+
+.peartexto::-webkit-scrollbar-thumb {
+background: rgba(40, 55, 121, 0.514);
+border-radius: 10px;
+}
+
+
+.peartexto p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+
+}
+
+.emoji{
+	width: 16px;
+
+}
+
+
+/*---fichario---*/
+
+.seta{
+	background-color: #0000ff00;
+	border: 0px;  
+  color: #196649;
+  font-size: 50px;
+  cursor: help;
+  text-shadow:
+  -1px -1px 0 black,
+   1px -1px 0 black,
+  -1px  1px 0 black,
+   1px  1px 0 black;
+
+
+}
+
+.seta:hover{
+	background-color: #0000ff00;
+	border: 0px;  
+  color: #892fa58e;
+  font-size: 50px;
+  cursor: help;
+  text-shadow:
+  -1px -1px 0 black,
+   1px -1px 0 black,
+  -1px  1px 0 black,
+   1px  1px 0 black;
+
+
+}
+
+.seta.um{
+  position: absolute;
+  margin-left: -90%;
+  margin-top: 38%;
+
+}
+
+.seta.dois{
+  position:absolute;
+  margin-left: -7%;
+  margin-top: 38%;
+
+}
+
+#cds{
+  position: absolute;
+  right:3%;
+  bottom: 7%;
+  transform: rotate(5deg);
+
+}
+
+#cd{
+  width: 800px;
+}
+
+.cds{
+  display:none;
+
+}
+
+.cds.ativa{
+  position: absolute;
+  top: 14.5%;
+  left: 21%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 110px;
+  row-gap: 9px;
+  margin: auto;
+}
+
+.cdshover:hover .caixat {
+  display: block;
+}
+
+.cds img{
+  width: 220px;
+
+}
+
+.cds img:hover{
+  width: 220px;
+  transform: rotate(10deg);
+  
+}
+
+.caixat {
+  position: absolute;
+  background: linear-gradient(#c2ddf8 15%, #91b2e3, #9cbadb); 
+  display: none;
+  width: 250px;
+  padding-inline: 10px;
+  text-align: left;
+  padding-bottom: 10px;
+  
+}
+
+.caixat img{
+  width: 100px !important;
+  padding-top: 10px;
+  margin-bottom: -10px;
+  transform: rotate(0deg) !important;
+
+}
+
+.cd1 .caixat{
+  top: 20px;
+  left: -270px;
+}
+
+.cd2 .caixat{
+  top: 20px;
+  left: 30px;
+}
+
+.cd3 .caixat{
+  top: 250px;
+  left: -270px;
+}
+
+.cd4 .caixat{
+  top: 250px;
+  left: 30px;
+}
+
+.caixat b{
+  color: #142a66;
+  line-height: 1.5;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+
+} 
+
+.caixat p, .caixat p b{
+  display: inline;
+  margin-right: 5px;
+  color: #000000bb; 
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+
+} 
+
+
+/*---musica agr---*/
+
+.tocadrecent{
+  background: linear-gradient(#d6f5ffdc 15%, #91b2e3e1, rgba(156, 186, 219, 0.863)); 
+  max-height:260px;
+  max-width: 420px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  border: 2px solid #2a507c;
+  box-shadow: 0px 0px 20px 0px #8ea4bd94;
+
+}
+
+.caixa{
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 20px;
+  position: absolute;
+  margin-left: 5%;
+  bottom: 5%;
+
+}
+
+#musica {
+  grid-column: 2;
+  margin: auto; 
+
+}
+
+.musicainf{
+    font-size: 15px;
+    color: #000000c5;
+    background-color: #91b2e3bd;
+    border: 3.5px solid #4d6b96bb;
+    width: 230px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+#album_cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+
+}
+
+#lastfmlista{ 
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+#recentes {
+  height: 80px;
+  margin: 10px;
+  margin-left: 15px;
+  width:fit-content;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+}
+
+#recentes::-webkit-scrollbar {
+	width: 6px;
+  height: 0px;
+}
+
+#recentes::-webkit-scrollbar-thumb {
+	background: rgba(61, 91, 156, 0.89);
+	border-radius: 10px;
+
+}
+
+.tocadrecent #album_link:hover{
+    cursor: help;
+
+}
+
+
+#tuba{
+  position: absolute;
+  width: 350px;
+  bottom: 50%;
+  left: 30%;
+
+}
+
+#tuba:hover{
+	transform: scale(1.2); 
+  cursor: help;
+
+
+}
+
+#gator{
+  position: absolute;
+  width: 250px;
+  bottom: 32%;
+  left: 23%;
+
+}
+
+#gator:hover{
+	transform: scale(1.2); 
+  cursor: help;
+
+
+}
+
+#titu{
+  position: absolute;
+  width: 350px;
+  height: 40px;
+  bottom: 40%;
+  left: 6%;
+
+
+}
+
+#albu{
+  position: absolute;
+  width: 350px;
+  top: 12%;
+  right: 23%;
+  transform: rotate(5deg);
+
+
+}
+
+#prr{
+	position: absolute;
+	bottom: 30px;
+	right: 5px;
+	width: 120px;
+	animation: spin 5s infinite linear;
+
+}
+
+
+/*animações*/
+
+@keyframes spin{
+  from{ transform: perspective(326px) rotateY(0deg); }
+  to{ transform: perspective(326px) rotateY(360deg); }
+
+}
+
+@keyframes animacao{
+  0% {
+    background-position-x: 25%, 0%;
+    background-position-y: 0%, 0%;
+  }
+  100% {
+    background-position-x: 100%, 0%;
+    background-position-y: 100%, 0%;
+  }
+
+}
+
+@keyframes virada {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+
+}
